@@ -1,5 +1,6 @@
 function alphabeticalOrder(arr) {
-    return arr.sort(function (a, b) {
+    let newArr = [].concat(arr);
+    return newArr.sort(function (a, b) {
         return a === b
             ? 0
             : a > b
@@ -8,4 +9,4 @@ function alphabeticalOrder(arr) {
     });
 }
 
-alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
